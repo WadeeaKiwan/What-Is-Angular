@@ -11,5 +11,20 @@ export class HelloWorldBindingsComponent {
     message = 'Hello, World';
     sayMessage() {
         alert(this.message);
+    };
+    myBackground = 2;
+    fontColorText = 'blue';
+    backgroundColor = 'white';
+    editBackground = false;
+    toggleBackground() {
+      this.editBackground = !this.editBackground;
+      if (this.editBackground) {
+        this.backgroundColor = 'red';
+        this.fontColorText = 'white';
+      } else {
+        this.backgroundColor = 'yellow';
+        this.fontColorText = 'black';
+      }
     }
+  
 }
